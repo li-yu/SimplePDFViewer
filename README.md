@@ -19,8 +19,8 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	        implementation 'com.github.li-yu:SimplePDFViewer:1.0.0'
-	}
+        implementation 'com.github.li-yu:SimplePDFViewer:1.0.0'
+    }
 ```
 
 Step 3. Show time
@@ -30,7 +30,7 @@ SimplePDFViewer.show(this, "http://xxx.xxx.xx/sample.pdf"); // also local file p
 ```
 
 ## ScreenShots
-<img src="ScreenShot.png" width="300px" />
+<img src="https://github.com/li-yu/SimplePDFViewer/blob/master/Screenshot.png" width="300px" />
 
 ### License ###
 [Apache License Version 2.0](https://github.com/li-yu/SimplePDFViewer/blob/master/LICENSE)
