@@ -5,7 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application>
-        <activity android:name=".PdfViewerActivity"></activity>
+        <activity
+            android:name=".PdfViewerActivity"></activity>
     </application>
 
 </manifest>

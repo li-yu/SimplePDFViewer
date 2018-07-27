@@ -2,8 +2,10 @@ package com.liyu.pdfviewer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -25,9 +27,17 @@ public class PdfViewerActivity extends AppCompatActivity {
             return;
         }
 
-        setTitle(parseSuffix(file));
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        
+        if (getSupportActionBar() == null) {
+            setSupportActionBar(toolbar);
+        } else {
+            toolbar.setVisibility(View.GONE);
+        }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setTitle(parseSuffix(file));
 
         webView = findViewById(R.id.web_view);
 
