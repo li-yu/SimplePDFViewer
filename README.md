@@ -21,7 +21,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-        implementation 'com.github.li-yu:SimplePDFViewer:1.0.0'
+        implementation 'com.github.li-yu:SimplePDFViewer:1.0.1'
     }
 ```
 
