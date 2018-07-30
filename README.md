@@ -1,7 +1,7 @@
 [![](https://jitpack.io/v/li-yu/SimplePDFViewer.svg)](https://jitpack.io/#li-yu/SimplePDFViewer)
 
 # SimplePDFViewer
-一个炒鸡简陋的 PDF 文件阅读器组件，基于 PDF.js，精简了一些功能，支持跨域文件访问,支持。
+一个炒鸡简陋的 PDF 文件阅读器组件，基于 PDF.js，精简了一些功能，支持跨域文件访问，支持自定义 Activity 主题。
 Ps. 最主要的是学习下 `JitPack.io` 如何发布库文件。
 
 ## Usage
