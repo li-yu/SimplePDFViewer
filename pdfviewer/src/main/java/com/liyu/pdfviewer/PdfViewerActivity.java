@@ -18,6 +18,12 @@ public class PdfViewerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        int theme = getIntent().getIntExtra("theme", 0);
+
+        if (theme != 0) {
+            setTheme(theme);
+        }
+        
         setContentView(R.layout.activity_pdf_viewer);
 
         String file = getIntent().getStringExtra("file");
@@ -28,7 +34,7 @@ public class PdfViewerActivity extends AppCompatActivity {
         }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        
+
         if (getSupportActionBar() == null) {
             setSupportActionBar(toolbar);
         } else {
