@@ -40,12 +40,12 @@ SimplePDFViewer.showWithTheme(this, "http://xxx.xxx.xx/sample.pdf", R.style.Cust
 Also use reflection to get current theme res id from Context:
 ```java
 int getThemeId(Context context) {
-	try {
-		Class<?> wrapper = Context.class;
+    try {
+        Class<?> wrapper = Context.class;
         Method method = wrapper.getMethod("getThemeResId");
         method.setAccessible(true);
         return (Integer) method.invoke(context);
-	} catch (Exception e) {
+    } catch (Exception e) {
         e.printStackTrace();
     }
     return 0;
